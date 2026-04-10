@@ -28,49 +28,54 @@
   <p>Kamu lagi cari buku apa sayang? 😊</p>
 </section>
 
-<!-- ✅ PRODUK -->
+<!-- PRODUK -->
 <section id="produk">
   <h2>Daftar Buku</h2>
   <div class="container" id="list"></div>
 </section>
 
-<!-- ✅ FORM -->
+<!-- TAMBAH BUKU -->
+<section>
+  <h2>Tambah Buku</h2>
+  <input id="namaBaru" placeholder="Nama Buku">
+  <input id="hargaBaru" type="number" placeholder="Harga">
+  <button onclick="tambah()">Tambah</button>
+</section>
+
+<!-- FORM -->
 <section id="form">
   <h2>Form Pembelian</h2>
-
   <form id="formBeli">
+  <input type="text" id="nama" placeholder="Nama Anda">
+  <small id="err-nama" class="error"></small>
 
-    <input type="text" id="nama" placeholder="Nama Anda">
-    <small id="err-nama" class="error"></small>
+  <input type="email" id="email" placeholder="Email Anda">
+  <small id="err-email" class="error"></small>
 
-    <input type="email" id="email" placeholder="Email Anda">
-    <small id="err-email" class="error"></small>
+  <input type="number" id="harga" placeholder="Harga Buku">
+  <small id="err-harga" class="error"></small>
 
-    <input type="number" id="harga" placeholder="Harga Buku">
-    <small id="err-harga" class="error"></small>
+  <select id="kategori">
+    <option value="">Pilih Kategori</option>
+    <option value="Komik">Komik</option>
+    <option value="Novel">Novel</option>
+  </select>
+  <small id="err-kategori" class="error"></small>
 
-    <select id="kategori">
-      <option value="">Pilih Kategori</option>
-      <option value="Komik">Komik</option>
-      <option value="Novel">Novel</option>
-    </select>
-    <small id="err-kategori" class="error"></small>
+  <div>
+    <label><input type="radio" name="metode" value="Transfer"> Transfer</label>
+    <label><input type="radio" name="metode" value="COD"> COD</label>
+  </div>
+  <small id="err-metode" class="error"></small>
 
-    <div>
-      <label><input type="radio" name="metode" value="Transfer"> Transfer</label>
-      <label><input type="radio" name="metode" value="COD"> COD</label>
-    </div>
-    <small id="err-metode" class="error"></small>
+  <textarea id="pesan" placeholder="Pesan"></textarea>
 
-    <textarea id="pesan" placeholder="Pesan"></textarea>
+  <button type="submit">Kirim</button>
+</form>
 
-    <button type="submit">Kirim</button>
-
-    <!-- HASIL DI DALAM FORM -->
-    <p id="hasil"></p>
+<p id="hasil"></p>
 
   </form>
-
 </section>
 
 </main>
